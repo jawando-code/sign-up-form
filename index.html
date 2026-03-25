@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="display"></div>
+        <div class="formdiv">
+            <h1>Earth Tours</h1>
+            <form>
+                <h2>Would you like to learn about exploring the jungles of Chilea?</h2>
+                <fieldset class='field'>
+                    <p>
+                        <label id="firstname">First Name(*)</label>
+                        <input type="text" id="firstname" name="user_firstname" placeholder="Nelson" required>
+                    </p>
+                    <p>
+                        <label id="lastname">Last Name(*)</label>
+                        <input type="text" id="lastname" name="user_lastname" placeholder="Mandela" required>
+                    </p>
+                </fieldset>
+                <fieldset class="field">
+                    <p>
+                        <label id="email">Email(*)</label>
+                        <input type="email" id="email" name="user-email" required>
+                    </p>
+                    <p>
+                        <label id="tele">Phone Number:</label>
+                        <input type="tel" id="tele" name="user_tele">
+                    </p>
+                </fieldset>
+                <fieldset class="field">
+                    <p>
+                        <label id="password">Password(*)</label>
+                        <input type="password" id="password" name="user_password" required minlength="8">
+                    </p>
+                    <p>
+                        <label id="confirmpass">Confirm Password(*):</label>
+                        <input type="confirmpass" id="confirmpass" name="user_password" required minlength="8">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
