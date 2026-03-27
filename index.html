@@ -14,7 +14,9 @@
             <h1>Earth Tours</h1>
             <form>
                 <h2>Would you like to learn about exploring the jungles of Chilea?</h2>
+                <div class="req">* required information</div>
                 <fieldset class='field'>
+                    
                     <p>
                         <label id="firstname">First Name(*)</label>
                         <input type="text" id="firstname" name="user_firstname" placeholder="Nelson" required>
@@ -31,20 +33,27 @@
                     </p>
                     <p>
                         <label id="tele">Phone Number:</label>
-                        <input type="tel" id="tele" name="user_tele">
+                        <input type="tel" id="tele" name="user_tele" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="090-123-2323">
                     </p>
                 </fieldset>
                 <fieldset class="field">
                     <p>
                         <label id="password">Password(*)</label>
-                        <input type="password" id="password" name="user_password" required minlength="8">
+                        <input type="password" id="password" name="user_password" required minlength="8" maxlenght="24">
                     </p>
                     <p>
                         <label id="confirmpass">Confirm Password(*):</label>
-                        <input type="confirmpass" id="confirmpass" name="user_password" required minlength="8">
+                        <input type="password" id="co    nfirmpass" name="user_password" required minlength="8" maxlength="24">
                     </p>
+                    
+                    
                 </fieldset>
+                <p class="button-contain">
+                        <br>
+                        <button type="submit">Create Account</button>
+                    </p>
             </form>
+            <br>
         </div>
     </div>
 </body>

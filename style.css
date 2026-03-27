@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .container{
     display:flex;
-    
-    background-color: rgb(246, 243, 238);
+    color:white;
+    background-color: rgb(0, 0, 0);
     
 }
 h1{
@@ -68,10 +68,11 @@ h1{
 
 }
 
-.formdiv{
+.formdiv:not(svg){
    
     padding-top:50px;
     text-align:center;
+    padding-left:20px;
 }
 p{
     display:flex;
@@ -81,11 +82,47 @@ p{
 
 input{
    width:250px;
-   
+   background-color: rgb(237, 242, 240);
+   border-radius:5px;
+   border-bottom-left-radius: ;
+   border:2px solid peachpuff;
 }
 
 .field{
     display:flex;
+    
     gap: 4rem;
     border: 0px;
+}
+
+br{
+  width: 2px;
+  box-shadow: black 4px;
+}
+
+button{
+  background-color:peachpuff;
+  color:black;
+  border-radius:90px;
+  border:solid rgb(255, 255, 255) 3px;
+  padding:0.5px;
+  width:40%;
+ 
+
+}
+.button-contain{
+  display:flex;
+
+  align-items: center;
+}
+
+label,.req{
+  font-size: 0.7rem;
+}
+
+input:user-invalid{
+    border-color:red;
+}
+input:user-valid{
+  border-color: green;
 }
